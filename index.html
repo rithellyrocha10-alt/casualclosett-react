@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CasualClosett_ — Treine com estilo</title>
+  <meta name="description" content="Moda fitness premium — conforto, estilo e performance" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="popup" class="popup hidden">
+    <div class="popup-card">
+      <h3>O que te motiva a dar o seu próximo UPGRADE no treino?</h3>
+      <div class="popup-options">
+        <button data-choice="A">Performance Incomparável</button>
+        <button data-choice="B">Confiança Máxima no Visual</button>
+        <button data-choice="C">Sentir o Conforto Imediato</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="brand">CASUALCLOSETT_</div>
+    <nav class="nav">
+      <a href="#products">Produtos</a>
+      <a href="#collections">Coleções</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Treine com estilo</h1>
+        <p>Sua performance começa aqui.</p>
+        <a class="btn" href="#products">Ver Coleção</a>
+      </div>
+      <div class="hero-image"><img src="assets/hero.jpg" alt="Treino"></div>
+    </section>
+
+    <section id="products" class="products-section">
+      <h2>Produtos</h2>
+      <div id="products-grid" class="grid"></div>
+      <div class="cart-actions">
+        <button onclick="finalizeOrder()" class="btn finalize">Finalizar Compra (WhatsApp)</button>
+      </div>
+    </section>
+
+    <section id="collections" class="collections-section">
+      <h2>Coleções</h2>
+      <div class="collections-list">
+        <button class="filter" data-filter="all">Todas</button>
+        <button class="filter" data-filter="feminino">Feminino</button>
+        <button class="filter" data-filter="masculino">Masculino</button>
+        <button class="filter" data-filter="acessorios">Acessórios</button>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>Sobre a Marca</h2>
+      <p><strong>Missão</strong> - Inspirar confiança e bem-estar através da moda fitness, oferecendo roupas que unem conforto, estilo e desempenho.</p>
+      <p><strong>Visão</strong> - Ser reconhecida como a principal marca de moda fitness que valoriza o movimento, a autenticidade e o poder de transformação.</p>
+      <p><strong>Valores</strong> - Qualidade, Empoderamento, Inovação, Sustentabilidade, Experiência.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contato</h2>
+      <p>Siga-nos no Instagram: <a href="https://www.instagram.com/casualclosett_?igsh=MXc3MWFocGdxMXZ5bw==" target="_blank">@casualclosett_</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> CASUALCLOSETT_</p>
+  </footer>
+
+<script src="app.js"></script>
+</body>
+</html>

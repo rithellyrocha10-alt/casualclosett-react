@@ -1,0 +1,31 @@
+:root{
+  --bg:#0b0b0b; /* dark */
+  --surface:#111111;
+  --muted:#bdbdbd;
+  --accent:#c62828; /* red accent */
+}
+*{box-sizing:border-box}
+body{margin:0;font-family: 'Poppins', sans-serif;background:var(--bg);color:#fff}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:18px 36px;background:linear-gradient(180deg, rgba(0,0,0,0.6), transparent)}
+.brand{font-weight:700;letter-spacing:2px}
+.nav a{color:var(--muted);margin-left:18px;text-decoration:none}
+.hero{display:flex;gap:24px;align-items:center;padding:40px}
+.hero-content h1{font-size:48px;margin:0;color:#fff}
+.hero-content p{color:var(--muted);margin:8px 0 18px}
+.btn{background:var(--accent);padding:12px 20px;border-radius:8px;text-decoration:none;color:#fff;font-weight:600;border:none;cursor:pointer}
+.products-section{padding:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.card{background:var(--surface);padding:14px;border-radius:12px}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:8px}
+.card h3{margin:10px 0 6px}
+.card p{color:var(--muted);margin:0 0 8px}
+.card .price{font-weight:700}
+.buy{display:inline-block;margin-top:8px;padding:10px 12px;border-radius:8px;background:transparent;border:1px solid var(--accent);color:var(--accent);cursor:pointer}
+.popup{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:60}
+.popup.hidden{display:none}
+.popup-card{background:#0e0e0e;padding:20px;border-radius:10px;text-align:center;max-width:420px}
+.popup-options button{display:block;width:100%;margin:8px 0;padding:10px;border-radius:8px;background:transparent;border:1px solid var(--muted);color:var(--muted);cursor:pointer}
+.site-footer{text-align:center;padding:18px;color:var(--muted)}
+.cart-actions{margin-top:20px;text-align:center}
+.btn.finalize{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:10px 16px;border-radius:8px}
+@media(max-width:720px){.hero{flex-direction:column}.hero-content h1{font-size:32px}}
